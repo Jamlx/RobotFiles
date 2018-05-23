@@ -7,14 +7,12 @@
 
 
 //By default the ID of the robot motors will be left_id = 1 and right_id = 2 and the default
-//values for both trim will be set to 0 
+//values for both trim will be set to 0
 
 typedef enum { false, true } bool;
 
 typedef struct ROBOT{
 	int addr;
-	//int left_id;
-	//int right_id;
 	int left_trim;
 	int right_trim;
 	bool stop_at_exit;
@@ -54,4 +52,3 @@ void left(int speed, int seconds, robot r1); // Spin to the left at a specified 
 
 
 #endif
-
